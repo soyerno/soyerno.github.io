@@ -2,8 +2,8 @@
 
 Sitio de [GitHub Pages](https://pages.github.com/) servido en **https://soyerno.github.io**.
 
-Es solo un **redirect** a mi perfil de GitHub — la única fuente de verdad de mi bio,
-stack, proyectos y contacto:
+Es una landing mínima que **apunta** a mi perfil de GitHub — la única fuente de verdad
+de mi bio, stack, proyectos y contacto:
 
 ➡️ **https://github.com/soyerno**
 
@@ -16,13 +16,10 @@ que es el más rico. Esta URL quedó como puntero hacia él.
 
 ## Cómo funciona
 
-[`index.html`](index.html) redirige por tres vías, de la más rápida a la más resiliente:
+[`index.html`](index.html) es una tarjeta estática con un botón **Ver mi perfil de GitHub →**.
+Sin auto-redirect: el visitante decide cuándo ir al perfil.
 
-1. `<meta http-equiv="refresh">` — redirect inmediato, funciona sin JS.
-2. `location.replace()` — redirect por JS (no ensucia el historial del browser).
-3. Un botón visible **Ir al perfil →** — fallback accesible si todo lo demás falla.
-
-`<link rel="canonical">` apunta al perfil para que los buscadores indexen ese destino, no esta URL.
+`<link rel="canonical">` apunta al perfil para señalar a los buscadores cuál es el destino canónico.
 
 ## Desarrollo
 
