@@ -3,337 +3,40 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Hernán De Souza — Sr Software Engineer (Full-stack + AI)</title>
-  <meta name="description" content="Hernán De Souza (soyerno) — Sr Software Engineer en MODO. Construyo producto end-to-end con TypeScript, React/Next.js y Node, y llevo IA a producción: agentes, MCP, RAG y guardrails. 14+ años shipeando software." />
-  <meta name="author" content="Hernán De Souza" />
-  <meta name="keywords" content="Hernán De Souza, soyerno, Software Engineer, AI Engineer, Full-stack, TypeScript, React, Next.js, Node.js, LLM, MCP, RAG, MODO, Firulapp, Buenos Aires" />
+  <title>Hernán De Souza — redirigiendo al perfil</title>
   <meta name="theme-color" content="#008859" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://soyerno.github.io/" />
+  <meta name="robots" content="noindex, follow" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Hernán De Souza — Sr Software Engineer (Full-stack + AI)" />
-  <meta property="og:description" content="Construyo producto end-to-end y llevo IA a producción: agentes, MCP, RAG y guardrails. 14+ años shipeando software." />
-  <meta property="og:url" content="https://soyerno.github.io/" />
-  <meta property="og:image" content="https://github.com/soyerno.png" />
-  <meta property="og:locale" content="es_AR" />
-  <meta property="profile:first_name" content="Hernán" />
-  <meta property="profile:last_name" content="De Souza" />
-  <meta property="profile:username" content="soyerno" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Hernán De Souza — Sr Software Engineer (Full-stack + AI)" />
-  <meta name="twitter:description" content="Construyo producto end-to-end y llevo IA a producción: agentes, MCP, RAG y guardrails." />
-  <meta name="twitter:image" content="https://github.com/soyerno.png" />
-
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23008859'/%3E%3Ctext x='50' y='70' font-size='56' text-anchor='middle' fill='white' font-family='system-ui,sans-serif' font-weight='700'%3EH%3C/text%3E%3C/svg%3E" />
-  <link rel="preconnect" href="https://github.com" crossorigin />
-
-  <!-- Structured data: Person -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Hernán De Souza",
-    "alternateName": "soyerno",
-    "url": "https://soyerno.github.io/",
-    "image": "https://github.com/soyerno.png",
-    "jobTitle": "Sr Software Engineer",
-    "worksFor": { "@type": "Organization", "name": "MODO", "url": "https://www.modo.com.ar" },
-    "address": { "@type": "PostalAddress", "addressLocality": "Buenos Aires", "addressCountry": "AR" },
-    "email": "mailto:desouza030689@gmail.com",
-    "knowsAbout": ["TypeScript", "React", "Next.js", "Node.js", "Python", "LLM agents", "Model Context Protocol", "RAG", "Software architecture", "TDD"],
-    "sameAs": [
-      "https://github.com/soyerno",
-      "https://www.linkedin.com/in/hdesouza/",
-      "https://soyerno.dev"
-    ]
-  }
-  </script>
+  <!-- Single source of truth: the GitHub profile. This vanity URL just points there. -->
+  <link rel="canonical" href="https://github.com/soyerno" />
+  <meta http-equiv="refresh" content="0; url=https://github.com/soyerno" />
 
   <style>
-    :root {
-      --green: #008859;
-      --green-2: #00b894;
-      --ink: #0f1f1a;
-      --muted: #4a5b54;
-      --bg: #ffffff;
-      --surface: #f4f7f5;
-      --border: #dfe7e3;
-      --ring: #00885933;
-      --radius: 16px;
-      --maxw: 980px;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --ink: #e9f1ed;
-        --muted: #9fb3aa;
-        --bg: #0c1311;
-        --surface: #131d1a;
-        --border: #243630;
-        --ring: #00b89455;
-      }
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
-    }
-
+    :root { --green: #008859; --green-2: #00b894; }
+    html { color-scheme: light dark; }
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    a { color: var(--green); }
-
-    :focus-visible {
-      outline: 3px solid var(--green-2);
-      outline-offset: 2px;
-      border-radius: 4px;
-    }
-
-    .skip-link {
-      position: absolute;
-      left: -999px;
-      top: 0;
-      background: var(--green);
-      color: #fff;
-      padding: 12px 18px;
-      z-index: 100;
-      border-radius: 0 0 8px 0;
-    }
-    .skip-link:focus { left: 0; }
-
-    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
-
-    /* Header / hero */
-    .hero {
+      margin: 0; min-height: 100svh;
+      display: grid; place-items: center;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       background: linear-gradient(135deg, var(--green) 0%, var(--green-2) 100%);
-      color: #fff;
-      padding: 64px 0 56px;
+      color: #fff; text-align: center; padding: 24px;
     }
-    .hero .wrap { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
-    .avatar {
-      width: 120px; height: 120px; border-radius: 50%;
-      border: 4px solid rgba(255,255,255,.55);
-      object-fit: cover; flex: 0 0 auto;
-      background: #ffffff33;
+    .card { max-width: 28rem; }
+    h1 { font-size: clamp(1.4rem, 4vw, 1.9rem); margin: 0 0 8px; }
+    p { margin: 0 0 20px; opacity: .95; line-height: 1.6; }
+    a.btn {
+      display: inline-block; padding: 12px 22px; border-radius: 999px;
+      background: #fff; color: var(--green); text-decoration: none; font-weight: 700;
     }
-    .hero h1 { font-size: clamp(1.9rem, 5vw, 2.8rem); margin: 0 0 6px; line-height: 1.1; }
-    .hero .role { font-size: clamp(1rem, 2.6vw, 1.25rem); margin: 0 0 4px; font-weight: 600; opacity: .96; }
-    .hero .sub { margin: 0; opacity: .9; }
-
-    /* Nav */
-    nav.toc {
-      position: sticky; top: 0; z-index: 30;
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: saturate(1.2);
-    }
-    nav.toc ul {
-      max-width: var(--maxw); margin: 0 auto; padding: 0 20px;
-      display: flex; gap: 6px; list-style: none; overflow-x: auto;
-    }
-    nav.toc a {
-      display: inline-block; padding: 14px 12px; color: var(--muted);
-      text-decoration: none; font-weight: 600; font-size: .95rem; white-space: nowrap;
-    }
-    nav.toc a:hover { color: var(--green); }
-
-    main { padding: 8px 0 40px; }
-    section { padding: 44px 0; border-bottom: 1px solid var(--border); }
-    section:last-of-type { border-bottom: 0; }
-    h2 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin: 0 0 18px; }
-    h2 .em { color: var(--green); }
-    p.lead { font-size: 1.1rem; color: var(--ink); }
-    .muted { color: var(--muted); }
-
-    ul.clean { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
-    ul.clean li { display: flex; gap: 12px; align-items: flex-start; }
-    ul.clean .ico { font-size: 1.3rem; line-height: 1.4; flex: 0 0 auto; }
-
-    /* Tech chips */
-    .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
-    .chips li {
-      background: var(--surface); border: 1px solid var(--border);
-      color: var(--ink); padding: 6px 12px; border-radius: 999px;
-      font-size: .9rem; font-weight: 600;
-    }
-
-    /* Project cards */
-    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-    .card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 8px;
-      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
-    }
-    .card:hover, .card:focus-within {
-      transform: translateY(-3px);
-      border-color: var(--green);
-      box-shadow: 0 10px 30px var(--ring);
-    }
-    .card h3 { margin: 0; font-size: 1.15rem; }
-    .card h3 a { text-decoration: none; }
-    .card h3 a::after { content: " ↗"; font-size: .85em; opacity: .6; }
-    .card p { margin: 0; color: var(--muted); font-size: .95rem; }
-    .card .stack { margin-top: auto; font-size: .8rem; color: var(--green); font-weight: 600; }
-
-    /* Contact buttons */
-    .btns { display: flex; flex-wrap: wrap; gap: 12px; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 12px 20px; border-radius: 999px; text-decoration: none;
-      font-weight: 700; border: 2px solid var(--green); color: var(--green);
-      background: transparent; transition: background .15s ease, color .15s ease;
-    }
-    .btn:hover { background: var(--green); color: #fff; }
-    .btn.primary { background: var(--green); color: #fff; }
-    .btn.primary:hover { background: var(--green-2); border-color: var(--green-2); }
-
-    footer { padding: 32px 0; text-align: center; color: var(--muted); font-size: .9rem; }
-
-    /* Dark-mode accent overrides (brighter green for AA contrast on dark bg) */
-    @media (prefers-color-scheme: dark) {
-      a { color: var(--green-2); }
-      .card .stack { color: var(--green-2); }
-      .btn { color: var(--green-2); border-color: var(--green-2); }
-      .btn:hover { background: var(--green-2); color: #0c1311; }
-      h2 .em, p.lead strong { color: var(--green-2); }
-    }
+    a.btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
-
-  <header class="hero">
-    <div class="wrap">
-      <img class="avatar" src="https://github.com/soyerno.png" width="120" height="120"
-           alt="Foto de perfil de Hernán De Souza" />
-      <div>
-        <h1>Hernán De Souza</h1>
-        <p class="role">Sr Software Engineer · Full-stack + AI</p>
-        <p class="sub">@ MODO · Buenos Aires, Argentina · 14+ años shipeando producto</p>
-      </div>
-    </div>
-  </header>
-
-  <nav class="toc" aria-label="Secciones del sitio">
-    <ul>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#ai">AI Engineering</a></li>
-      <li><a href="#tech">Tech</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <main id="main">
-    <div class="wrap">
-
-      <section id="sobre-mi" aria-labelledby="h-sobre-mi">
-        <h2 id="h-sobre-mi">Sobre <span class="em">mí</span></h2>
-        <p class="lead">
-          Construyo producto end-to-end —del front en React/Next.js al back en Node/Python— y
-          ahora estoy llevando <strong>IA a producción</strong>, con tests reales y guardrails.
-        </p>
-        <ul class="clean">
-          <li><span class="ico" aria-hidden="true">🏦</span>
-            <span>En <a href="https://www.modo.com.ar" rel="noopener">MODO</a> (fintech argentina) construyo
-              features con IA, bien testeadas y con guardrails.</span></li>
-          <li><span class="ico" aria-hidden="true">🐾</span>
-            <span>Construyo <a href="https://firulapp.com.ar" rel="noopener">Firulapp</a> — app comunitaria para
-              dueños de mascotas en Buenos Aires: feed social + Perdidos &amp; Encontrados con IA.
-              Next.js 16, React 19, Firebase, arquitectura hexagonal.</span></li>
-          <li><span class="ico" aria-hidden="true">📚</span>
-            <span>14+ años shipeando software. TDD, clean architecture y pragmatismo por sobre perfeccionismo.</span></li>
-        </ul>
-      </section>
-
-      <section id="ai" aria-labelledby="h-ai">
-        <h2 id="h-ai">🤖 AI <span class="em">Engineering</span></h2>
-        <p class="muted">Capacidades que construyo con LLMs (como skills reutilizables, sin detalle propietario):</p>
-        <ul class="clean">
-          <li><span class="ico" aria-hidden="true">🧩</span>
-            <span><strong>Agentes &amp; tool use</strong> — agentes que llaman herramientas de forma confiable, con outputs estructurados.</span></li>
-          <li><span class="ico" aria-hidden="true">🔌</span>
-            <span><strong>Servidores MCP</strong> — exponer capacidades de la app a asistentes de IA vía Model Context Protocol.</span></li>
-          <li><span class="ico" aria-hidden="true">📚</span>
-            <span><strong>RAG</strong> — generación aumentada por recuperación, anclada en datos de dominio.</span></li>
-          <li><span class="ico" aria-hidden="true">🎯</span>
-            <span><strong>Prompt engineering &amp; evals</strong> — prompts versionados, outputs estructurados, evaluación automatizada.</span></li>
-          <li><span class="ico" aria-hidden="true">🛡️</span>
-            <span><strong>Safety &amp; guardrails</strong> — defensas contra prompt-injection, control de acceso en superficies de IA,
-              validación de outputs y parity checks que mantienen la IA en sync con el producto.</span></li>
-        </ul>
-      </section>
-
-      <section id="tech" aria-labelledby="h-tech">
-        <h2 id="h-tech"><span class="em">🛠️</span> Tech</h2>
-        <ul class="chips">
-          <li>TypeScript</li><li>JavaScript</li><li>Python</li>
-          <li>React</li><li>Next.js</li><li>Angular</li><li>Tailwind CSS</li>
-          <li>Node.js</li><li>NestJS</li><li>Firebase</li>
-          <li>LLMs · MCP · Agents</li><li>Git</li>
-        </ul>
-      </section>
-
-      <section id="proyectos" aria-labelledby="h-proyectos">
-        <h2 id="h-proyectos">📌 Proyectos <span class="em">destacados</span></h2>
-        <div class="grid">
-          <article class="card">
-            <h3><a href="https://firulapp.com.ar" rel="noopener">🐾 Firulapp</a></h3>
-            <p>Comunidad de mascotas + Perdidos &amp; Encontrados con IA.</p>
-            <span class="stack">Next.js · Firebase · LLM agents</span>
-          </article>
-          <article class="card">
-            <h3><a href="https://github.com/soyerno/nestjs-api-tools" rel="noopener">🧰 nestjs-api-tools</a></h3>
-            <p>Toolkit NestJS con un <strong>TOON interceptor</strong> que recorta el uso de tokens del LLM 30–60% vs JSON.</p>
-            <span class="stack">NestJS · TypeScript</span>
-          </article>
-          <article class="card">
-            <h3><a href="https://github.com/soyerno/stripe-plans-importer-nodejs" rel="noopener">💳 stripe-plans-importer</a></h3>
-            <p>Importar planes de Stripe programáticamente en Node.js.</p>
-            <span class="stack">Node.js · Stripe API</span>
-          </article>
-          <article class="card">
-            <h3><a href="https://github.com/soyerno/monopoly-tdd" rel="noopener">🧪 monopoly-tdd</a></h3>
-            <p>Modelado de dominio guiado por tests en TypeScript.</p>
-            <span class="stack">TypeScript · Jest · TDD</span>
-          </article>
-        </div>
-      </section>
-
-      <section id="contacto" aria-labelledby="h-contacto">
-        <h2 id="h-contacto">📫 <span class="em">Contacto</span></h2>
-        <p class="muted">Abierto a problemas interesantes en AI engineering y producto full-stack.</p>
-        <div class="btns">
-          <a class="btn primary" href="https://soyerno.dev" rel="noopener">Portfolio</a>
-          <a class="btn" href="https://www.linkedin.com/in/hdesouza/" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/soyerno" rel="noopener">GitHub</a>
-          <a class="btn" href="mailto:desouza030689@gmail.com">Email</a>
-        </div>
-      </section>
-
-    </div>
+  <main class="card">
+    <h1>Hernán De Souza</h1>
+    <p>Me mudé. Toda mi info vive ahora en un solo lugar: mi perfil de GitHub.</p>
+    <a class="btn" href="https://github.com/soyerno">Ir al perfil →</a>
   </main>
-
-  <footer>
-    <p>© <span id="year">2026</span> Hernán De Souza · Hecho a mano, sin frameworks.</p>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>location.replace("https://github.com/soyerno");</script>
 </body>
 </html>
