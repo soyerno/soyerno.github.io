@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".github/banner.svg" alt="soyerno" width="100%">
+</p>
+
 # soyerno.github.io
 
 Sitio de [GitHub Pages](https://pages.github.com/) servido en **https://soyerno.github.io**.
